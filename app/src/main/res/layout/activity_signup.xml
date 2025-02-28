@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/profile_placeholder"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <TextView
+            android:id="@+id/appNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waves Of Food"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/signupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Here For Your\nAdmin Dashboard"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints=""
+            android:hint="@string/choose_your_location"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/selectedLocationTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Jaipur"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/arrowDownButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/arrow_down"
+                android:src="@drawable/ic_arrow_down"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_person"
+                android:contentDescription="@string/owner_icon" />
+
+            <EditText
+                android:id="@+id/ownerNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:autofillHints=""
+                android:hint="@string/name_of_owner"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_restaurant"
+                android:contentDescription="@string/restaurant_icon" />
+
+            <EditText
+                android:id="@+id/restaurantNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Name of Restaurant"
+                android:inputType="text"
+                tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email"
+                android:contentDescription="@string/email_icon" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="@string/email_or_phone_number"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#757575"
+                tools:ignore="Autofill,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:autofillHints=""
+                android:src="@drawable/ic_lock"
+                android:contentDescription="@string/password_icon" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#757575"
+                tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Create Account"
+            android:textColor="#263238"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/alreadyHaveAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/designByTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Design By NeatRoots"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</ScrollView>

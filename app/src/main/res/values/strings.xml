@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Food Delivering App</string>
+    <string name="todo" />
+    <string name="waves_of_food">Waves Of Food</string>
+    <string name="sign_up_here_for_your_nadmin_dashboard">Sign Up Here For Your\nAdmin Dashboard</string>
+    <string name="choose_set_location">Choose Set Location</string>
+    <string name="name">Name</string>
+    <string name="design_by_neatroots">Design By NeatRoots</string>
+    <string name="create_account">Create Account</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="sign_up_here_for_your_admin_dashboard" />
+    <string name="owner_icon">Owner Icon</string>
+    <string name="restaurant_icon">Restaurant Icon</string>
+    <string name="password_icon">Password Icon</string>
+    <string name="email_icon">Email Icon</string>
+    <string name="already_have_an_account">Already Have An Account?</string>
+    <string name="arrow_down">Arrow Down</string>
+    <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="choose_your_location">Choose Your Location</string>
+    <string name="name_of_owner">Name of Owner</string>
 </resources>

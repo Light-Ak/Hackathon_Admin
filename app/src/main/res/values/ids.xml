@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="createAccountButton" type="id" />
+    <item name="profileImageView" type="id" />
+    <item name="appNameTextView" type="id" />
+    <item name="locationEditText" type="id" />
+    <item name="nameEditText" type="id" />
+    <item name="emailEditText" type="id" />
+    <item name="passwordEditText" type="id" />
+    <item name="signupTextView" type="id" />
+    <item name="designByTextView" type="id" />
+</resources>
