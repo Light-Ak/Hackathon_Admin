@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/profile_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Waves of Food"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteY="14dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="86dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#f4f4f4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dpdp"
+                android:layout_height="30dp"
+                android:src="@drawable/attantion"
+                tools:ignore="ContentDescription,ImageContrastCheck"
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="23dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Pending Order"
+                android:textColor="#248A28"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="54dp"
+                tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="80dp"
+                tools:layout_editor_absoluteY="81dp"
+                tools:ignore="HardcodedText,MissingConstraints,VisualLintBounds" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/right"
+                tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck"
+                tools:layout_editor_absoluteX="225dp"
+                tools:layout_editor_absoluteY="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Completed\norder"
+                android:textAlignment="center"
+                android:textColor="#248A28"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="210dp"
+                tools:layout_editor_absoluteY="49dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="30"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="225dp"
+                tools:layout_editor_absoluteY="79dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/dollar"
+                tools:layout_editor_absoluteX="340dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Whole Time\nEarning"
+                android:textColor="#248A28"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="326dp"
+                tools:layout_editor_absoluteY="48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="30$"
+                android:textColor="#4CAF50"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="338dp"
+                tools:layout_editor_absoluteY="83dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="217dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cardgreen"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Add Menu"
+                android:textColor="#4CAF50"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="48dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/plus"
+                tools:ignore="ContentDescription,DuplicateIds,ImageContrastCheck,MissingConstraints"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="184dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="482dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cardgreen"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Log out"
+                android:textColor="#AF4C5E"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="65dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/log"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="ContentDescription,DuplicateIds,MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="482dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cardgreen"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Order dispatch"
+                android:textColor="#FF5722"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/order"
+                tools:ignore="ContentDescription,DuplicateIds,ImageContrastCheck,MissingConstraints"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        tools:layout_editor_absoluteY="349dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cardgreen"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="Create New user"
+                android:textColor="#0B0B0B"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="67dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_person"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="ContentDescription,DuplicateIds,MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="349dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cardgreen"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="profile"
+                android:textColor="#4CAF50"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/profile"
+                tools:ignore="ContentDescription,DuplicateIds,ImageContrastCheck,MissingConstraints"
+                tools:layout_editor_absoluteX="63dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="150dp"
+        android:layout_height="85dp"
+        android:outlineSpotShadowColor="#4CAF50"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        tools:layout_editor_absoluteY="217dp"
+        tools:ignore="MissingConstraints,UnusedAttribute">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/cardgreen"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/yeon_sung"
+                android:text="All item Menu"
+                android:textColor="#4CAF50"
+                tools:ignore="HardcodedText,TextContrastCheck"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/eye_icon"
+                tools:ignore="ContentDescription,DuplicateIds,ImageContrastCheck,MissingConstraints"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
