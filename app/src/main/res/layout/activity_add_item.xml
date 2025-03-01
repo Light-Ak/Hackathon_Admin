@@ -145,7 +145,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/white"
                 android:fontFamily="@font/lato_regular"
-                android:text="Indian food is rich in flavors, spices, and vibrant colors.It includes diverse dishes like biryanis, curries, and dosas.."
+                android:text="Momos are soft dumplings filled with veggies or meat.Steamed, fried, or tandoori, each offers a unique treat."
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/tview"
                 app:layout_constraintStart_toStartOf="@id/tview"
@@ -173,7 +173,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/white"
                 android:fontFamily="@font/lato_regular"
-                android:text="Noddles\nMomo\nPizza"
+                android:text="Dough\nChicken For Filling\nChutney"
                 app:layout_constraintEnd_toEndOf="@+id/tview1"
                 app:layout_constraintStart_toStartOf="@id/tview1"
                 app:layout_constraintTop_toBottomOf="@id/tview1" />
