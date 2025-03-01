@@ -25,8 +25,8 @@
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="50dp"
-                android:layout_height="52dp"
+                android:layout_width="59dp"
+                android:layout_height="60dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="16dp"
                 android:background="@android:color/transparent"
@@ -40,7 +40,7 @@
                 android:layout_width="185dp"
                 android:layout_height="70dp"
                 android:fontFamily="@font/yeonsung_regular"
-                android:text=" Add Item"
+                android:text="Add Item"
                 android:textColor="@color/black"
                 android:textSize="40sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -110,13 +110,13 @@
                 app:layout_constraintEnd_toEndOf="@+id/selectimage"
                 app:layout_constraintStart_toStartOf="@+id/selectimage"
                 app:layout_constraintTop_toBottomOf="@+id/selectimage">
-
                 <ImageView
-                    android:id="@+id/addImage"
-                    android:layout_width="118dp"
+                    android:id="@+id/selectimage"
+                    android:layout_width="175dp"
                     android:layout_height="110dp"
+                    android:src="@drawable/addimage"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/download" />
+                    />
 
 
             </androidx.cardview.widget.CardView>
@@ -136,7 +136,7 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/selectimage"
-                app:layout_constraintTop_toBottomOf="@id/cardview"/>
+                app:layout_constraintTop_toBottomOf="@id/cardview"
 
             <EditText
                 android:id="@+id/description"
@@ -145,7 +145,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/white"
                 android:fontFamily="@font/lato_regular"
-                android:text="Momos are soft dumplings filled with veggies or meat.Steamed, fried, or tandoori, each offers a unique treat."
+                android:text="Momos are soft dumplings filled with veggies .Steamed, fried,  each offers a unique treat."
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="@id/tview"
                 app:layout_constraintStart_toStartOf="@id/tview"
@@ -165,7 +165,7 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/description"
-                app:layout_constraintTop_toBottomOf="@id/description"/>
+                app:layout_constraintTop_toBottomOf="@id/description"
 
             <EditText
                 android:layout_width="330dp"
@@ -173,18 +173,11 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/white"
                 android:fontFamily="@font/lato_regular"
-                android:text="Dough\nChicken For Filling\nChutney"
+                android:text="Dough\nVegetables For Filling\nChutney"
                 app:layout_constraintEnd_toEndOf="@+id/tview1"
                 app:layout_constraintStart_toStartOf="@id/tview1"
                 app:layout_constraintTop_toBottomOf="@id/tview1" />
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="37dp"
-                android:layout_height="39dp"
-                app:srcCompat="@drawable/icon"
-                tools:layout_editor_absoluteX="357dp"
-                tools:layout_editor_absoluteY="250dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
