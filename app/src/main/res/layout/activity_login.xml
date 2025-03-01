@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waves Of Food"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deliver Favorite Food"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/loginTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login To Your Account"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:id="@+id/emailPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email or Phone Number"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background" />
+
+    <TextView
+        android:id="@+id/orTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/facebookLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue With Facebook"
+        android:backgroundTint="#1877F2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/googleLoginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue With Google"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/noAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't Have Account?"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/designByTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design By NeatRoots"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
