@@ -8,9 +8,10 @@
         android:label="Waves Of Food"
         android:supportsRtl="true"
         android:theme="@style/Theme.WavesOfFood" >
+
         <activity
             android:name=".SplashScreen"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
             tools:ignore="IntentFilterExportedReceiver,MissingClass" >
             <intent-filter>
@@ -19,6 +20,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
