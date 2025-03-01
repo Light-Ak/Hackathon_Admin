@@ -22,15 +22,4 @@ public class AddItemActivity extends AppCompatActivity {
         });
     }
 }
- <TextView
-android:layout_width="0dp"
-android:layout_height="57dp"
-android:text="Select Image"
-android:gravity="center_vertical"
-android:paddingLeft="15dp"
-android:fontFamily="@font/yeonsung_regular"
-android:paddingRight="15dp"
-android:textColor="@color/black"
-app:layout_constraintEnd_toEndOf="@+id/enterfoodprice"
-app:layout_constraintStart_toStartOf="@+id/enterfoodprice"
-app:layout_constraintTop_toBottomOf="@+id/enterfoodprice"/>
+
