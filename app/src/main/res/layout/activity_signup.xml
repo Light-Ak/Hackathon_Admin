@@ -140,7 +140,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_email"
+                android:src="@drawable/mail"
                 android:contentDescription="@string/email_icon" />
 
             <EditText

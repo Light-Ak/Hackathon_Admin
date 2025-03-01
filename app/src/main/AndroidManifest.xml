@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WavesOfFood">
         <activity
+            android:name=".loginActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity1"
+            android:exported="false" />
+        <activity
             android:name=".AddItemActivity"
             android:exported="false" />
         <activity
