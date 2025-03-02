@@ -20,4 +20,5 @@
     <string name="email_or_phone_number">Email or Phone Number</string>
     <string name="choose_your_location">Choose Your Location</string>
     <string name="name_of_owner">Name of Owner</string>
+    <string name="or_ncontinue_with">Or\nContinue With</string>
 </resources>
