@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.fooddeliveringapp" >
+    package="com.example.fooddeliveringapp">
 
     <application
         android:allowBackup="true"
         android:label="Waves Of Food"
         android:supportsRtl="true"
-        android:theme="@style/Theme.WavesOfFood" >
-
+        android:theme="@style/Theme.WavesOfFood">
+        <activity
+            android:name=".loginActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".AddItemActivity"
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
-            tools:ignore="IntentFilterExportedReceiver,MissingClass" >
+            tools:ignore="IntentFilterExportedReceiver,MissingClass">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

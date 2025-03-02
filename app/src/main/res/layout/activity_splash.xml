@@ -8,6 +8,7 @@
     android:background="#FFFFFF">
 
     <!-- Logo or Illustration -->
+
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"

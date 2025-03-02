@@ -57,7 +57,7 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="30dpdp"
+                android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/attantion"
                 tools:ignore="ContentDescription,ImageContrastCheck"
@@ -223,7 +223,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/log"
+                android:src="@drawable/logo"
                 tools:layout_editor_absoluteX="63dp"
                 tools:layout_editor_absoluteY="16dp"
                 tools:ignore="ContentDescription,DuplicateIds,MissingConstraints" />
