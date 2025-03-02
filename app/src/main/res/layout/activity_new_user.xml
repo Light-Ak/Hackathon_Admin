@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".SignupActivity">
-
+    tools:context=".NewUserActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/profileImageView"
@@ -19,7 +29,6 @@
             android:contentDescription="TODO"
             android:src="@drawable/profile_placeholder"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
             tools:ignore="ContentDescription,HardcodedText" />
 
         <TextView
@@ -32,16 +41,16 @@
             android:text="Waves Of Food"
             android:textStyle="bold"
             android:textColor="#000000"
-            android:textSize="30sp"
+            android:textSize="35sp"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/signupTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up Here For Your\nAdmin Dashboard"
+            android:text="Create New User Admin"
             android:fontFamily="@font/yeon_sung"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:textColor="#4CAF50"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
@@ -49,46 +58,13 @@
             android:layout_marginBottom="10dp"
             tools:ignore="HardcodedText" />
 
-        <EditText
-            android:id="@+id/locationEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:autofillHints=""
-            android:hint="@string/choose_your_location"
-            android:padding="1dp"
-            android:textSize="15dp"
-            android:textColor="#4CAF50"
-            android:fontFamily="@font/yeon_sung"
-            android:inputType="textPostalAddress"
-            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp">
-
-            <TextView
-                android:id="@+id/selectedLocationTextView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Jaipur"
-                android:fontFamily="@font/yeon_sung"
-                android:textSize="16sp"
-                android:textColor="#000000"
-                tools:ignore="HardcodedText" />
-
-            <ImageButton
-                android:id="@+id/arrowDownButton"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@android:color/transparent"
-                android:contentDescription="@string/arrow_down"
-                android:src="@drawable/ic_arrow_down"
-                tools:ignore="TouchTargetSizeCheck" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -96,7 +72,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="10dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -110,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:autofillHints=""
-                android:hint="@string/name_of_owner"
+                android:hint="Name"
                 android:fontFamily="@font/yeon_sung"
                 android:background="@android:color/transparent"
                 android:inputType="textPersonName"
@@ -124,24 +100,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="15dp">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_restaurant"
-                android:contentDescription="@string/restaurant_icon" />
-
-            <EditText
-                android:id="@+id/restaurantNameEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:hint="Name of Restaurant"
-                android:fontFamily="@font/yeon_sung"
-                android:background="@android:color/transparent"
-                android:inputType="text"
-                tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            android:layout_marginBottom="5dp">
 
         </LinearLayout>
 
@@ -150,7 +109,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="15dp">
+            android:layout_marginBottom="20dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -176,8 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginTop="8dp">
 
             <ImageView
                 android:layout_width="24dp"
@@ -208,40 +166,35 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
             android:layout_width="150dp"
             android:layout_height="70dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/greenbuttonshape"
             android:layout_gravity="center"
             android:outlineSpotShadowColor="@color/textColor"
-            android:text="Create Account"
+            android:text="Create New User"
             android:fontFamily="@font/yeon_sung"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <TextView
-            android:id="@+id/alreadyHaveAccountTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/already_have_an_account"
-            android:textSize="12sp"
-            android:textColor="#4CAF50"
-            android:fontFamily="@font/yeon_sung"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp" />
+
 
         <TextView
             android:id="@+id/designByTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Team 07"
+
             android:textSize="20sp"
             android:textColor="#4CAF50"
             android:fontFamily="@font/yeon_sung"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="100dp"
             tools:ignore="HardcodedText" />
 
     </LinearLayout>
 
 </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

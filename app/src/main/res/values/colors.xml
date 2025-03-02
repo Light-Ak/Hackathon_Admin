@@ -2,5 +2,8 @@
 <resources>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="green">#4CAF50</color>
+    <color name="textColor">#53E88B</color>
+    <color name="starColor">#53E88B</color>
+    <color name="endColor">#15BE77</color>
+
 </resources>
