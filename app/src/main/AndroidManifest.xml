@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WavesOfFood">
         <activity
-            android:name=".loginActivity2"
+            android:name=".loginActivity"
             android:exported="false" />
         <activity
             android:name=".loginActivity1"
