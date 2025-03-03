@@ -38,11 +38,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up Here For Your\nAdmin Dashboard"
-            android:textSize="16sp"
-            android:textColor="#000000"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/lato_bold"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
             tools:ignore="HardcodedText" />
 
         <EditText
@@ -97,8 +99,13 @@
 
             <EditText
                 android:id="@+id/ownerNameEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="366dp"
+                android:layout_height="57dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_person"
+                android:contentDescription="@string/owner_icon"
                 android:layout_marginStart="8dp"
                 android:autofillHints=""
                 android:hint="@string/name_of_owner"
@@ -180,15 +187,23 @@
 
         </LinearLayout>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/createAccountButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#4CAF50"
+            app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+            android:layout_width="158dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/greenbuttonshape"
+            android:layout_gravity="center"
+            android:outlineSpotShadowColor="@color/textColor"
             android:text="Create Account"
-            android:textColor="#263238"
-            tools:ignore="HardcodedText,VisualLintButtonSize" />
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/alreadyHaveAccountTextView"
